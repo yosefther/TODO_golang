@@ -1,0 +1,78 @@
+# ======================
+# GO (Backend)
+# ======================
+
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.out
+
+# Build output
+bin/
+dist/
+build/
+
+# Go modules cache (optional local files)
+vendor/
+
+# Test output
+*.test
+/ran
+
+# Go workspace files
+go.work
+go.work.sum
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ======================
+# FLUTTER (Frontend)
+# ======================
+
+# Dart / Flutter build
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+build/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Android
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# Pub cache (optional)
+.pub-cache/
+
+# Generated files
+pubspec.lock
+
+# ======================
+# ENV / SECRETS
+# ======================
+
+.env
+*.env
+secrets.json
+config.yaml
+
+# Logs
+*.log
