@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #4a6cf7;
+  --color-brand-dark: #3454d6;
+  --font-sans: "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply m-0 min-w-80 bg-[#f3f5fa] font-sans text-slate-800 antialiased;
+  }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+  button:disabled,
+  input:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  :focus-visible {
+    outline: 3px solid #3454d6;
+    outline-offset: 4px;
+  }
+  ::selection {
+    background: #dbe4ff;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
