@@ -2,11 +2,6 @@
 
 A small todo app. The backend is a Go REST API (Gorilla Mux + SQLite), the frontend is React + TypeScript with Vite, Tailwind and TanStack Query.
 
-TODO(yosef): one line on why you built it.
-
-![demo](docs/demo.gif)
-<!-- TODO(yosef): record GIF -->
-
 ## How to run it
 
 You need Go 1.26.3+ (see `backend/go.mod`) and Node.js 22.12+.
@@ -56,11 +51,10 @@ npm run typecheck
 npm run build
 ```
 
-## Limitations / what's next
+## Limitations
 
 - The API doesn't validate input (blank items get through if you skip the UI) and `/complete` returns success even for an ID that doesn't exist.
 - No editing, un-completing, auth or pagination.
-- TODO(yosef): what's next (for example Go handler tests or CORS).
 
 ## License
 
